@@ -4,6 +4,8 @@ import { Recipe } from "./Recipe.jsx"
 import {getRecipeFromChefClaude} from "./ai.js"
 import React from "react"
 
+console.log('API Key:', import.meta.env.VITE_ANTHROPIC_API_KEY);
+
 export function App() {
 
   const [ingredients, setIngredients] = React.useState([])
